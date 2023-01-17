@@ -1,0 +1,52 @@
+
+:root {
+  --wheat: wheat;
+  --teal: #348796;
+  --red: #964334;
+  --olive: #879634; 
+}
+
+::section {
+    background-color: var(--wheat);
+    color: var(--teal);
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    background-color: var(--wheat);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: var(--teal);
+    color: var(--wheat);
+  }
+  
+  h1 {
+    font-size: 200%;
+  }
+
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+  }
+  
+  nav a {
+    color: var(--red);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: var(--olive);
+  }
+  
