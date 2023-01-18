@@ -1,104 +1,139 @@
-
+  
 :root {
   --pale: white;
   --teal: #0099ff;
-  --link-color: #f60;
+  --link-color: white;
   --olive: #879634; 
+  --dark: #13293d;
 }
 
-/*Setting body element style */
 body {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.3;
-    background-color: var(--pale);
-    color: var(--teal);
-    font-family: Verdana, Tahoma, sans-serif;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    background-color: var(--teal);
-    color: var(--pale);
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    color: var(--pale);
-    margin-bottom: 20px;
-  }
+  font-family: Arial;
+  margin: 0;
+}
 
-  h2 {
-    font-size: 1.5rem;
-    color: var(--teal);
-    margin-bottom: 20px;
-  }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: var(--dark);
+    }
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--teal);
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--teal);
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+
+
 
 /*Setting nav element style */
 nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-    margin-bottom: 20px;
-    padding: 0 3px;
-  }
-  
-  nav a {
-    color: var(--link-color);
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  nav a::after{
-    content:'';
-    display: block;
-    height: 4px;
-    width: 0;
-    background-color: var(--olive);
-    transition: .5s;
-  }
-
-  nav a:hover::after {
-    width:100%
-  }
-  
- .about-me, .work, .contact{
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid red;
- } 
-
-.content-left {
-  border: 2px solid black;
-  width: 25%;
+display: flex;
+justify-content: space-between;
+min-width: 300px;
+margin-bottom: 20px;
+padding: 0 3px;
 }
 
-.content-right {
-   border: 2px solid blue;
-   width: 75%;
+nav a {
+color: var(--link-color);
+font-weight: bold;
+text-decoration: none;
+}
+
+nav a::after{
+content:'';
+display: block;
+height: 4px;
+width: 0;
+background-color: var(--olive);
+transition: .5s;
+}
+
+nav a:hover::after {
+width:100%
 }
 
 main {
+  display: flex; /**allows all the content in the main html to flex, both aside & body**/
+}
+/** make it so the aside columm is 30% of the viewscreen**/
+aside {
+  flex: 30%; 
+  background-color: #b9c6ae;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+/** make it so the body section is 70% of the viewscreen**/
+section {
+  flex: 70%;
+  background-color: #fff;
+  padding: 20px;
+}
+/** pushes the text down away from top of the content box, aligns text**/
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
   display: flex;
-  flex-direction: column;
-  border: 2px solid black;
-  height:calc(100vs - 100px);
-  align-items: center;
-  justify-content: center;
-  padding-top: 2%;
+  justify-content: space-between;
 }
 
 .personal-image {
-  width: 500px;
-  height: auto;
-  display: flex;
-  align-items: center;
-  margin: 2%;
+  background-color: #fff;
+  width: 100%; /** take up 100% of the available flex width **/
+  margin-top: 20px;
+  padding: 20px;  /**pushes the text image down 20px from corner of image box **/
+  height: 200px;  /** sets height of image**/
+  border: 1px solid black;
 }
 
-.email, .github {
+.responsive {
+  width: 100%;
+  height: auto;
+}
 
+ /* Image Placeholders */
+ .sample-img {
+  background-color: #fff;
+  width: 100%; /** take up 100% of the available flex width **/
+  margin-top: 10px;
+  padding: 20px;  /**pushes the text image down 20px from corner of image box **/
+  height: 200px;  /** sets height of image**/
+  border: 1px solid black;
+  
+}
+
+  /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets -  */
+@media screen and (max-width: 992px) {
+  header {
+    
+  }
+}
+
+/* Large smartphones -  */
+@media screen and (max-width: 768px) {
+  nav {
+  }
+}
+
+/* Small smartphones - image placeholders  */
+@media screen and (max-width: 576px) {
+  .personal-image {
+    display: none;
+  }
 }
