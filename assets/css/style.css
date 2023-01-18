@@ -91,19 +91,50 @@ footer {
   justify-content: space-between;
 }
 
+/**sets personal-image elements **/
 .personal-image {
   background-color: #fff;
   width: 100%; /** take up 100% of the available flex width **/
   margin-top: 20px;
   padding: 20px;  /**pushes the text image down 20px from corner of image box **/
   height: 200px;  /** sets height of image**/
-  border: 1px solid black;
 }
 
+/**to make the images responsive **/
 .responsive {
   width: 100%;
   height: auto;
 }
+
+
+/** to make the contact footer links behaviour match the nav links from above **/
+.content-right {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  color: var(--link-color);
+  font-size: 1.5rem;
+  text-decoration: none;
+  }
+
+  .content-right a {
+    color: var(--link-color);
+    text-decoration: none; 
+  }
+
+  .content-right a::after{
+    content:'';
+    display: block;
+    height: 4px;
+    width: 0;
+    background-color: var(--olive);
+    transition: .5s;
+    }
+ 
+    .content-right a:hover::after {
+      width:100%
+      }
+
 
  /* Image Placeholders */
  .sample-img {
@@ -115,6 +146,8 @@ footer {
   border: 1px solid black;
   
 }
+
+
 
   /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 
