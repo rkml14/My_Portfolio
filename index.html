@@ -1,54 +1,61 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Media Query for Screen</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Rebecca Lawrence</title>
   </head>
+
   <body>
+
+    <!--header-->
     <header>
-    <h1>
-        Rebecca Lawrence
-    </h1>
+    <h1>Rebecca Lawrence</h1>
     <!-- navbar -->
         <nav>
           <ul>
             <li><a href="#about">About </a></li>
-            <li><a href="#workd">Work</a></li>
+            <li><a href="#work">Work</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#">Resume</a></li>
-        </ul>
+          </ul>
       </nav>
-</header>
+    </header>
+
     <!-- Body -->
     <main>
-      <aside><a id="about"><h2>About Me</h2></a>
-        <p>Currently enrolled in a full stack development bootcamp at the University of Toronto.  Looking to make a career change!</p>
-        <br>
+      <section class="greeting"> <!-- css started -->
         <div class="personal_image"><img src="./assets/images/rkml.png" alt="Rebecca walking with sheep" class="responsive"></div>
-        
-      </aside>
+        <h2> Hello, I'm Rebecca!</h2> <!-- could add a class to this to bring it in-->
+      </section>
 
-      <section>
-        <h2>Holding for large work images</h2>
-        <div class="sample-img">Image</div>
+      <section class="about-me">  <!-- needs css-->
+        <article id="about"></article>
+        <h3>About Me</h3>
+        <p>Currently enrolled in a full stack development bootcamp at the University of Toronto.  Looking to make a career change!</p>
+        <br>      
+      </section>
+
+      <section class="work-links"> <!-- needs css-->
+        <article id="work"></article>
+        <h3>Holding for large work images</h3>
+        <div class="sample-img">Image</div>  <!--needs Css to share with below-->
         <p>waiting waiting</p>
         <br />
-        <h2>Simller work images</h2>
-        <div class="sample-img">Image</div>
+        <h3>Simller work images</h3>
+        <div class="sample-img">Image</div><!--needs Css to share with above-->
         <p>
         lorem
         </p>
       </section>
+
+
     </main>
 
     <!-- Footer -->
-    <footer>
-      <h2>
-       <a id="contact"><h2>Contact Me</h2>
-      </h2>
+    <footer id="contact">
+      <h3>Contact Me</h3>
       <div class="content-right">
         555-555-5555
        <div class="email"><a href="mailto:rkmlawrence@gmail.com">Email</a></div>

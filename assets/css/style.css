@@ -21,13 +21,21 @@ header {
     }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: var(--teal);
   margin-bottom: 20px;
   font-weight: 900;
 }
 
 h2 {
+  font-size: 2.5rem;
+  color: var(--teal);
+  margin-bottom: 20px;
+  font-weight: 900;
+  text-align: center;
+}
+
+h3 {
   font-size: 1.5rem;
   color: var(--teal);
   margin-bottom: 20px;
@@ -65,22 +73,61 @@ nav a:hover::after {
 width:100%
 }
 
-main {
-  display: flex; /**allows all the content in the main html to flex, both aside & body**/
-}
+/**allows all the content in the main html to flex, both aside & body which is what I didn't 
+want and was casuing me grief and i've commented it out so i can yell at myself for 
+it later**/
+/* main {
+  display: flex; 
+} */
+
+
 /** make it so the aside columm is 30% of the viewscreen**/
-aside {
+/* aside {
   flex: 30%; 
   background-color: #b9c6ae;
   padding: 20px;
   flex-wrap: wrap;
-}
+} */
+
 /** make it so the body section is 70% of the viewscreen**/
-section {
-  flex: 70%;
+
+.greeting {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
   background-color: #fff;
   padding: 20px;
+  border: 2px solid red;
 }
+
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid purple;
+}
+
+.work-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid yellow;
+}
+
+/* section {
+  background-color: #fff;
+  padding: 20px;
+ 
+} */
+
+
 /** pushes the text down away from top of the content box, aligns text**/
 footer {
   padding: 20px;
