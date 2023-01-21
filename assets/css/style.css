@@ -203,7 +203,7 @@ footer {
 
 
  
-/* 
+
   @media screen and (max-width:768px) {
       .nav ul{
           display:block;
@@ -211,13 +211,14 @@ footer {
       header{
           display:block;
       }
+      .about-me{
+        display: block;
+      }
       .second-work .smaller-project{
           flex-basis: 100%;
       }
       .footer{
           display:block; 
       }
-      .about-me{
-          display: block;
-      }
-  } */
+
+  }
