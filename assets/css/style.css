@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -70,28 +70,30 @@ nav a:hover::after {
 width:100%
 }
 
+/*Defining the greeting section containing hero-image */
 .greeting {
   display: flex;
-  /* justify-content: space-between; */
-  flex-wrap: wrap;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
   align-items: center;
+  gap: 2.5rem;
+  max-width: 68rem;
+  margin: auto;
   background-color: #fff;
   padding: 20px 20px;
-  border: 2px solid red;
 }
 
 /**sets personal-image elements **/
 .personal-image {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 25%; /** take up 100% of the available flex width **/
-  margin-top: 20px;
-  padding: 20px;  /**pushes the text image down 20px from corner of image box **/
-  height: 200px;  /** sets height of image**/
+   margin-top: 20px;
+  padding: 20px;  
+  height: 200px;  
 }
 
-/**to make the images responsive **/
+/**set hero-image properties **/
 .hero-image {
   width: 100%;
   height: auto;
@@ -99,17 +101,23 @@ width:100%
   justify-content: flex-end;
 }
 
+/** set about-me article properties**/
 .about-me {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  justify-content: center;
   align-items: center;
   background-color: #fff;
   padding: 20px;
-  border: 2px solid purple;
+  width: 50%;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-left: 30px;
+  border-top: 2px solid var(--teal);
+  border-bottom: 2px solid var(--teal);
 }
 
-.work-links {
+.main-project {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -119,14 +127,18 @@ width:100%
   border: 2px solid yellow;
 }
 
-/* section {
+.smaller-project {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
   background-color: #fff;
+  margin: auto;
   padding: 20px;
- 
-} */
+  border: 2px solid yellow;
+}
 
 
-/** pushes the text down away from top of the content box, aligns text**/
 footer {
   padding: 20px;
   text-align: center;
