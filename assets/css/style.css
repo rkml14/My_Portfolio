@@ -138,7 +138,7 @@ width:100%
 
 .second-work {
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 flex-wrap: wrap;
 }
 
@@ -156,8 +156,9 @@ flex-wrap: wrap;
   padding: 16px;
   border-radius: 15px;
   border: 5px solid var(--teal);
-  
-}
+  width: 40%; 
+  }
+
  
 
 /**Footer styling to match header **/
