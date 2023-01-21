@@ -101,6 +101,25 @@ it later**/
   border: 2px solid red;
 }
 
+/**sets personal-image elements **/
+.personal-image {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 25%; /** take up 100% of the available flex width **/
+  margin-top: 20px;
+  padding: 20px;  /**pushes the text image down 20px from corner of image box **/
+  height: 200px;  /** sets height of image**/
+}
+
+/**to make the images responsive **/
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 25%;
+  justify-content: flex-end;
+}
+
 .about-me {
   display: flex;
   justify-content: space-between;
@@ -138,20 +157,7 @@ footer {
   justify-content: space-between;
 }
 
-/**sets personal-image elements **/
-.personal-image {
-  background-color: #fff;
-  width: 100%; /** take up 100% of the available flex width **/
-  margin-top: 20px;
-  padding: 20px;  /**pushes the text image down 20px from corner of image box **/
-  height: 200px;  /** sets height of image**/
-}
 
-/**to make the images responsive **/
-.responsive {
-  width: 100%;
-  height: auto;
-}
 
 
 /** to make the contact footer links behaviour match the nav links from above **/
@@ -184,6 +190,8 @@ footer {
 
 
  /* Image Placeholders */
+
+ 
  .sample-img {
   background-color: #fff;
   width: 100%; /** take up 100% of the available flex width **/
@@ -191,6 +199,16 @@ footer {
   padding: 20px;  /**pushes the text image down 20px from corner of image box **/
   height: 200px;  /** sets height of image**/
   border: 1px solid black;
+  
+}
+/* Image Placeholders */
+ .sample-img {
+  background-color: #fff;
+  width: 50%; 
+  margin-top: 10px;
+  padding: 20px;  /**pushes the text image down 20px from corner of image box **/
+  height: 200px;  /** sets height of image**/
+  border: 1px solid orange; 
   
 }
 
