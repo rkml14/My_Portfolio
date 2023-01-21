@@ -42,9 +42,6 @@ h3 {
   font-weight: 900;
 }
 
-
-
-
 /*Setting nav element style */
 nav ul {
 display: flex;
@@ -73,31 +70,13 @@ nav a:hover::after {
 width:100%
 }
 
-/**allows all the content in the main html to flex, both aside & body which is what I didn't 
-want and was casuing me grief and i've commented it out so i can yell at myself for 
-it later**/
-/* main {
-  display: flex; 
-} */
-
-
-/** make it so the aside columm is 30% of the viewscreen**/
-/* aside {
-  flex: 30%; 
-  background-color: #b9c6ae;
-  padding: 20px;
-  flex-wrap: wrap;
-} */
-
-/** make it so the body section is 70% of the viewscreen**/
-
 .greeting {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
   align-items: center;
   background-color: #fff;
-  padding: 20px;
+  padding: 20px 20px;
   border: 2px solid red;
 }
 
