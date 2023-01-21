@@ -136,11 +136,17 @@ width:100%
   
 }
 
-/* .smaller-project{
-  background-image: url("../images/blue-streaks.png");
+.second-work {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.smaller-project{
+  background-image: url("../images/triangles.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding:32px 0;
+  padding: 30px;
   margin-top:2rem; 
   text-align: center;
   margin-left: 20px;
@@ -151,32 +157,8 @@ width:100%
   border-radius: 15px;
   border: 5px solid var(--teal);
   
-} */
+}
  
-
-
-.smaller-project {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: #fff;
-  margin: auto;
-  padding: 20px;
-  border: 2px solid yellow;
-}
-
-
-/* Image Placeholders */
-.sample-img {
-  background-color: #fff;
-  width: 50%; 
-  margin-top: 10px;
-  padding: 20px;  /**pushes the text image down 20px from corner of image box **/
-  height: 200px;  /** sets height of image**/
-  border: 1px solid orange; 
-  
-}
 
 /**Footer styling to match header **/
 footer {
@@ -215,39 +197,6 @@ footer {
   .content-right a:hover::after {
     width:100%
   }
-
-
-
-/* Added rotation, box-shadow, border-radius */
-/* .card {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 50px;
-  padding: 10px;
-  flex: 0 0 300px;
-  box-shadow: 10px 10px 5px #aaaaaa;
-  margin: 20px;
-} */
-
-/* Added border-radius to match the card */
-/* .card header {
-  border-radius: 50px 50px 0px 0px;
-  color: var(--teal);
-  text-align: center;
-  padding: 20px;
-}
-
-.card p {
-  text-align: center;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 0px 0px 50px 50px;
-} */
-
-
-
 
 
 
