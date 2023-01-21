@@ -75,10 +75,10 @@ width:100%
 .greeting {
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   align-items: center;
-  gap: 2.5rem;
-  max-width: 68rem;
+  gap: 1.5rem;
+  max-width: 70rem;
   margin: auto;
   background-color: #fff;
   padding: 20px 20px;
@@ -96,8 +96,6 @@ width:100%
 
 /**set hero-image properties **/
 .hero-image {
-  width: auto;
-  height: auto;
   justify-content: flex-end;
   border-radius: 15px;
   border: 5px solid var(--teal);
@@ -106,7 +104,7 @@ width:100%
 /** set about-me article properties**/
 .about-me {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: #fff;
@@ -115,15 +113,17 @@ width:100%
   font-size: 1.2rem;
   text-align: center;
   margin-left: 30px;
-  border-top: 2px solid var(--teal);
-  border-bottom: 2px solid var(--teal);
+ 
 }
 
+.work-section {
+  padding-top: 30px;
+}
 .main-project {
   background-image: url("../images/blue-streaks.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding:32px 0;
+  padding:32px 20px;
   margin-top:2rem; 
   text-align: center;
   margin-left: 20px;
@@ -201,24 +201,22 @@ footer {
 
 
 
-  /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
-
-/* Tablets -  */
-@media screen and (max-width: 992px) {
-  header {
-    
-  }
-}
-
-/* Large smartphones -  */
-@media screen and (max-width: 768px) {
-  nav {
-  }
-}
-
-/* Small smartphones - image placeholders  */
-@media screen and (max-width: 576px) {
-  .personal-image {
-    display: none;
-  }
-}
+ 
+/* 
+  @media screen and (max-width:768px) {
+      .nav ul{
+          display:block;
+      }
+      header{
+          display:block;
+      }
+      .second-work .smaller-project{
+          flex-basis: 100%;
+      }
+      .footer{
+          display:block; 
+      }
+      .about-me{
+          display: block;
+      }
+  } */
