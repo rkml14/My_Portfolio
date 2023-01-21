@@ -127,6 +127,21 @@ width:100%
   border: 2px solid yellow;
 }
 
+.main-project img {
+  border-radius: 15%;
+  }
+
+
+.sample-img {
+  background-color: #fff;
+  width: 100%; /** take up 100% of the available flex width **/
+  margin-top: 10px;
+  padding: 20px;  /**pushes the text image down 20px from corner of image box **/
+  height: 200px;  /** sets height of image**/
+  border: 1px solid black;
+}
+
+
 .smaller-project {
   display: flex;
   justify-content: space-between;
@@ -137,6 +152,7 @@ width:100%
   padding: 20px;
   border: 2px solid yellow;
 }
+
 
 
 footer {
@@ -183,15 +199,9 @@ footer {
  /* Image Placeholders */
 
  
- .sample-img {
-  background-color: #fff;
-  width: 100%; /** take up 100% of the available flex width **/
-  margin-top: 10px;
-  padding: 20px;  /**pushes the text image down 20px from corner of image box **/
-  height: 200px;  /** sets height of image**/
-  border: 1px solid black;
+
   
-}
+
 /* Image Placeholders */
  .sample-img {
   background-color: #fff;
