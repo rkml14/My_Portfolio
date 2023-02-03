@@ -129,7 +129,7 @@ main {
   padding-top: 30px;
 }
 .main-project {
-  background-image: url("../images/blue-streaks.png");
+  background-image: url("../images/toronto.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding:32px 20px;
@@ -151,9 +151,9 @@ justify-content: space-evenly;
 flex-wrap: wrap;
 }
 
-.smaller-project{
-  background-image: url("../images/triangles.png");
-  background-repeat: no-repeat;
+#password{
+  background-image: url("../images/password.png");
+  background-repeat: 5%;
   background-size: cover;
   padding: 30px;
   margin-top:2rem; 
@@ -168,7 +168,77 @@ flex-wrap: wrap;
   width: 40%; 
   }
 
- 
+  #work-day{
+    background-image: url("../images/workday.png");
+    background-repeat: 5%;
+    background-size: cover;
+    padding: 30px;
+    margin-top:2rem; 
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 95%;
+    height: 200px;
+    padding: 16px;
+    border-radius: 15px;
+    border: 5px solid var(--teal);
+    width: 40%; 
+    }
+
+    #weather{
+      background-image: url("../images/weather.png");
+      background-repeat: 5%;
+      background-size: cover;
+      padding: 30px;
+      margin-top:2rem; 
+      text-align: center;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      width: 95%;
+      height: 200px;
+      padding: 16px;
+      border-radius: 15px;
+      border: 5px solid var(--teal);
+      width: 40%; 
+      }
+
+      
+    #password{
+      background-image: url("../images/password.png");
+      background-repeat: 5%;
+      background-size: cover;
+      padding: 30px;
+      margin-top:2rem; 
+      text-align: center;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      width: 95%;
+      height: 200px;
+      padding: 16px;
+      border-radius: 15px;
+      border: 5px solid var(--teal);
+      width: 40%; 
+      }
+
+  .smaller-project{
+    background-image: url("../images/triangles.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin-top:2rem; 
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 95%;
+    height: 200px;
+    padding: 16px;
+    border-radius: 15px;
+    border: 5px solid var(--teal);
+    width: 40%; 
+    }
+
+    
+    
 
 /**Footer styling to match header **/
 footer {
