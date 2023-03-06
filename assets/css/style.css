@@ -127,6 +127,8 @@ main {
 
 .work-section {
   padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
 }
 .main-project {
   background-image: url("../images/toronto.png");
